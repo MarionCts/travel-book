@@ -1,0 +1,51 @@
+Polices :
+	Principale : 'Open Sans', Helvetica, sans-serif;
+	Titres/Secondaire : 'Shadows Into Light', cursive;
+
+Couleurs :
+	Background : 
+		Clair : #0F4C81;
+		Foncé : #042746;
+	Texte : #fff;
+
+Icones/Pictogrammes : Font-Awesome
+
+Google Font + Font-Awesome : Importer via CDN (balise link dans le <head>)
+
+Textes :
+
+TP codage Voyage
+
+accueil
+préparation
+etapes
+contact
+
+Travel book
+
+Suivez moi lors de mon voyage autour du monde
+
+La suite c'est par ici
+
+Hey !
+Bienvenue sur mon blog et carnet de voyage. Je suis Brendan, un globe trotter épicurien amoureux de beaux paysages. J'ai crée Travel Book pour partager avec vous mes aventures, les lieus et pays que je visite. Tout ce qui se passe quand on voyage avec son sac à dos à travers le monde.
+Bonne lecture !
+
+Australie
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Nouvelle Calédonie
+
+Qui ne rêve pas de glisser ses pieds dans le sable fin de la Polynésie ? De se baigner dans les eaux turquoises de ses lagons ? Voyager en Polynésie était aussi un rêve pour moi, un rêve que j’ai réalisé bien plus tôt que je ne l’aurai imaginer… Mon voyage à Tahiti, je l’ai voulu loin des grands hôtels, loin des pilotis. Un voyage authentique au milieu du Pacifique !
+
+Japon
+
+Le Japon est un pays qui bouleverse tant par son histoire que par ses coutumes. C’est un monde à part, un monde où le respect, la délicatesse et l’harmonie sont rois ! J’ai fortement été marquée par ce voyage et ce pays si unique! Bon voyage au pays du soleil levant !
+
+Contact
+
+06 00 00 00 00
+Suivez-moi
+
+2025 © Art'Info

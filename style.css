@@ -1,0 +1,354 @@
+/* RESET HTML */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* DESIGN SYSTEM */
+
+/* Colors */
+
+:root {
+    --white: rgb(255, 255, 255);
+    --dive: rgb(4, 39, 70);
+    --sky: rgb(14, 75, 128);
+    --turquoise: rgb(2, 166, 150);
+    --sunset: rgb(242, 183, 5);
+    --meadow: rgb(199, 217, 60);
+}
+
+/* Fonts */
+
+:root {
+    --helvetica: 'Helvetica', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --shadows-into-light: 'Shadows Into Light', cursive;
+}
+
+/* Texts */
+
+h1, h2, h3, h4, p, a {
+    color: var(--white);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--shadows-into-light);
+}
+
+p, a {
+    font-family: var(--open-sans);
+}
+
+/* Return to top button */
+
+.return-to-top {
+    z-index: 2;
+    position: fixed;
+    bottom: clamp(2rem, 10vw, 7rem);
+    right: clamp(2rem, 10vw, 7rem);
+}
+
+.return-to-top i {
+    color: var(--white);
+    opacity: 0.3;
+    font-size: 4rem;
+}
+
+/* HEADER | HERO SECTION */
+
+.herosection {
+    height: 100vh;
+    background: url(img/backpack-mountain.webp) center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 4rem;
+}
+
+/* Gradient overlay on background-image */
+
+.herosection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 0.7));
+    z-index: 1;
+}
+
+/* Puts the text above the gradient overlay */
+
+.herosection nav, .herosection__heading {
+    z-index: 2;
+}
+
+/* nav */
+
+.herosection .menu {
+    padding: 0 2rem;
+    display: flex;
+    gap: 1rem 3.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.herosection .menu .menu__links {
+    list-style: none;
+}
+
+.herosection .menu .menu__links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.herosection .menu .menu__links a:hover {
+    color: var(--sunset);
+}
+
+/* Title and text */
+
+.herosection__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+}
+
+.herosection h1 {
+    font-size: clamp(5rem, 10vw, 8.5rem);
+    text-transform: uppercase;
+}
+
+.herosection h2 {
+    font-size: clamp(3rem, 5vw, 3.5rem);
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Call to action text */
+
+.herosection__cta {
+    text-align: center;
+}
+
+.herosection__cta p {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.herosection__cta i {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+/* MAIN | INTRODUCTION */
+
+.introduction {
+    background-color: var(--sky);
+    min-height: clamp(50vh, 50vw, 86vh);
+    padding: 7rem clamp(4rem, 23vw, calc(100% - 45rem));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction h2 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.introduction p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Icons */
+
+.introduction__icons {
+    margin: 6rem 0 0;
+    display: flex;
+}
+
+.introduction__icons i {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+    padding: 0 clamp(2rem, 5vw, 4.5rem);
+}
+
+.introduction__icons i:nth-of-type(1) {
+    color: var(--turquoise);
+}
+
+.introduction__icons i:nth-of-type(2) {
+    color: var(--sunset);
+}
+
+.introduction__icons i:nth-of-type(3) {
+    color: var(--meadow);
+}
+
+/* MAIN | TRAVEL */
+
+.travel {
+    background-color: var(--dive);
+    display: flex;
+    flex-direction: column;
+}
+
+.travel__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem 7rem;
+    max-width: 63%;
+}
+
+.australie, .nouvellecaledonie, .japon {
+    display: flex;
+}
+
+/* Style of the title for each destination */
+
+.travel__text__title {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 3rem;
+    border-bottom: .1rem solid var(--white);
+}
+
+.travel__text__title h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.travel__text__title i {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+/* Style of the paragraphs for each destination */
+
+.travel__text p {
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Style of the figure for each destination */
+
+.travel figure {
+    max-height: 60vh;
+    width: 100%;
+}
+
+.travel figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.travel .japon figure img {
+    object-position: right;
+}
+
+/* Change the order of the text and the figure on desktop version */
+
+.nouvellecaledonie figure {
+    order: 2;
+}
+
+/* FOOTER | CONTACT & RESEAUX */
+
+footer {
+    background-color: var(--sky);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer__contact a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+footer .footer__contact, footer .footer__social {
+    padding: 2rem 0;
+}
+
+footer .footer__contact h4, footer .footer__social h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 0 2rem;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+.footer__social i {
+    color: var(--white);
+    font-size: 2.3rem;
+    padding: 0 2.5rem;
+}
+
+footer .legal {
+    width: 100%;
+    text-align: center;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: .5rem 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+
+    /* Changes the position of the text & figure (travel section) on mobile version */
+    
+    .australie, .nouvellecaledonie, .japon {
+        flex-direction: column;
+    }
+
+    .nouvellecaledonie figure {
+        order: 0;
+    }
+
+    /* Enlarges the text to 100% of the viewport (travel section) */
+
+    .travel__text {
+        max-width: 100%;
+    }
+
+    /* Changes the row display to column display on the footer's mobile version */
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .footer__contact {
+        align-items: center;
+    }
+}
